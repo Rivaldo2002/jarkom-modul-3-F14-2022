@@ -12,11 +12,14 @@ Loid bersama Franky berencana membuat peta tersebut dengan kriteria WISE sebagai
 Ostania
 
 auto eth0
+
 iface eth0 inet dhcp
 
 auto eth1
 iface eth1 inet static
+
 	address 192.206.1.1
+	
 	netmask 255.255.255.0
 
 auto eth2
@@ -25,72 +28,102 @@ iface eth2 inet static
 	netmask 255.255.255.0
 
 auto eth3
+
 iface eth3 inet static
+
 	address 192.206.3.1
+	
 	netmask 255.255.255.0
 
 WISE
 
 auto eth0
+
 iface eth0 inet static
+
 	address 192.206.2.2
+	
 	netmask 255.255.255.0
+	
 	gateway 192.206.2.1
   
 Berlint
 
 auto eth0
+
 iface eth0 inet static
+
  address 192.206.2.3
+ 
  netmask 255.255.255.0
+ 
  gateway 192.206.2.1
  
  Westalis
  
  auto eth0
 iface eth0 inet static
+
 	address 192.174.2.4
+	
 	netmask 255.255.255.0
+	
 	gateway 192.174.2.1
 
 Eden
 
 auto eth0
 iface eth0 inet static
+
         address 192.174.3.2
+	
         netmask 255.255.255.0
+	
         gateway 192.174.3.1
         
 NewstonCastle
 
 auto eth0
+
 iface eth0 inet static
+
         address 192.174.3.3
+	
         netmask 255.255.255.0
+	
           gateway 192.174.3.1
           
 KemonoPark
 
 auto eth0
 iface eth0 inet static
+
         address 192.174.3.4
+	
         netmask 255.255.255.0
+	
         gateway 192.174.3.1
         
 SSS
 
 auto eth0
+
 iface eth0 inet static
         address 192.174.1.2
+	
         netmask 255.255.255.0
+	
         gateway 192.174.1.1
         
 Garden
 
 auto eth0
+
 iface eth0 inet static
         address 192.174.1.3
+	
         netmask 255.255.255.0
+	
         gateway 192.174.1.1
 
 Wise DNS Server 
