@@ -10,6 +10,7 @@
 ## **Soal 1**
 Loid bersama Franky berencana membuat peta tersebut dengan kriteria WISE sebagai DNS Server, Westalis sebagai DHCP Server, Berlint sebagai Proxy Server
 Ostania
+
 auto eth0
 iface eth0 inet dhcp
 
@@ -29,6 +30,7 @@ iface eth3 inet static
 	netmask 255.255.255.0
 
 WISE
+
 auto eth0
 iface eth0 inet static
 	address 192.206.2.2
@@ -36,6 +38,7 @@ iface eth0 inet static
 	gateway 192.206.2.1
   
 Berlint
+
 auto eth0
 iface eth0 inet static
  address 192.206.2.3
@@ -43,6 +46,7 @@ iface eth0 inet static
  gateway 192.206.2.1
  
  Westalis
+ 
  auto eth0
 iface eth0 inet static
 	address 192.174.2.4
@@ -50,34 +54,39 @@ iface eth0 inet static
 	gateway 192.174.2.1
 
 Eden
+
 auto eth0
 iface eth0 inet static
         address 192.174.3.2
         netmask 255.255.255.0
         gateway 192.174.3.1
         
-NewstonCastle	
+NewstonCastle
+
 auto eth0
 iface eth0 inet static
         address 192.174.3.3
         netmask 255.255.255.0
           gateway 192.174.3.1
           
-KemonoPark	
+KemonoPark
+
 auto eth0
 iface eth0 inet static
         address 192.174.3.4
         netmask 255.255.255.0
         gateway 192.174.3.1
         
-SSS	
+SSS
+
 auto eth0
 iface eth0 inet static
         address 192.174.1.2
         netmask 255.255.255.0
         gateway 192.174.1.1
         
-Garden	
+Garden
+
 auto eth0
 iface eth0 inet static
         address 192.174.1.3
@@ -85,31 +94,36 @@ iface eth0 inet static
         gateway 192.174.1.1
 
 Wise DNS Server 
-(scriptWise.sh)	
+(scriptWise.sh)
+
 apt-get update
 apt-get install bind9 -y
 
 Westalis DHCP Server
-(scriptWestalis.sh)	
+(scriptWestalis.sh)
+
 apt-get update
 apt-get install isc-dhcp-server -y
 
 
 Berlint Proxy Server
 (scriptBerlint.sh)
+
 apt-get update
 apt-get install squid -y
 
 ## **Soal 2**
 Ostania sebagai DHCP Relay
 Ostania DHCP Relay
-(script.sh)	
+(script.sh)
+
 apt-get update
 apt-get install isc-dhcp-relay -y
 
 Kemudian edit file /etc/default/isc-dhcp-relay dengan menambahkan SERVER = "192.206.2.4" dan INTERFACES = "eth1 eth2 eth3"
 
 service isc-dhcp-relay restart
+
 ![image](https://user-images.githubusercontent.com/71111983/201684707-1026af57-2e09-4fa1-aae6-cdf28982c5d5.png)
 
 
