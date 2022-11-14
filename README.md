@@ -64,22 +64,22 @@ iface eth0 inet static
  auto eth0
 iface eth0 inet static
 
-	address 192.174.2.4
+	address 192.206.2.4
 	
 	netmask 255.255.255.0
 	
-	gateway 192.174.2.1
+	gateway 192.206.2.1
 
 Eden
 
 auto eth0
 iface eth0 inet static
 
-        address 192.174.3.2
+        address 192.206.3.2
 	
         netmask 255.255.255.0
 	
-        gateway 192.174.3.1
+        gateway 192.206.3.1
         
 NewstonCastle
 
@@ -87,44 +87,46 @@ auto eth0
 
 iface eth0 inet static
 
-        address 192.174.3.3
+        address 192.206.3.3
 	
         netmask 255.255.255.0
 	
-          gateway 192.174.3.1
+          gateway 192.206.3.1
           
 KemonoPark
 
 auto eth0
 iface eth0 inet static
 
-        address 192.174.3.4
+        address 192.206.3.4
 	
         netmask 255.255.255.0
 	
-        gateway 192.174.3.1
+        gateway 192.206.3.1
         
 SSS
 
 auto eth0
 
 iface eth0 inet static
-        address 192.174.1.2
+
+        address 192.206.1.2
 	
         netmask 255.255.255.0
 	
-        gateway 192.174.1.1
+        gateway 192.206.1.1
         
 Garden
 
 auto eth0
 
 iface eth0 inet static
-        address 192.174.1.3
+
+        address 192.206.1.3
 	
         netmask 255.255.255.0
 	
-        gateway 192.174.1.1
+        gateway 192.206.1.1
 
 Wise DNS Server 
 (scriptWise.sh)
